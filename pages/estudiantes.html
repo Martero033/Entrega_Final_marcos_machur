@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Font Awesome -->
+<link
+href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+rel="stylesheet"
+/>
+<!-- Google Fonts -->
+<link
+href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap"
+rel="stylesheet"
+/>
+<!-- MDB -->
+<link
+href="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/5.0.0/mdb.min.css"
+rel="stylesheet"
+/>
+    <link rel="stylesheet" href="../Css/css.css">
+    <title>SISTEMA DE GESTION DE ESTUDIANTE</title>
+</head>
+<body class="body__estudiante">
+  <header>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        
+        <!-- Container wrapper -->
+        <div class="container-fluid">
+          <!-- Toggle button -->
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-mdb-toggle="collapse"
+            data-mdb-target="#navbarLeftAlignExample"
+            aria-controls="navbarLeftAlignExample"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <i class="fas fa-bars"></i>
+          </button>
+      
+          <!-- Collapsible wrapper -->
+          <div class="collapse navbar-collapse" id="navbarLeftAlignExample">
+            <!-- Left links -->
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <!-- Navbar dropdown -->
+              <a
+                  class="nav-link"
+                  href="./home.html"
+                  
+                >
+                  HOME
+                </a>
+              <li class="nav-item dropdown">
+                <a
+                  class="nav-link dropdown-toggle"
+                  href="#"
+                  id="navbarDropdown"
+                  role="button"
+                  data-mdb-toggle="dropdown"
+                  aria-expanded="false"
+                >
+                  Profesores
+                </a>
+                <!-- Dropdown menu -->
+                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                  <li>
+                    <a class="dropdown-item" href="./profesores.html">Gestion De Notas</a>
+                  </li>
+                  <li><hr class="dropdown-divider" /></li>
+                </ul>
+              </li>
+              <li class="nav-item dropdown">
+                <a
+                  class="nav-link dropdown-toggle"
+                  href="#"
+                  id="navbarDropdown"
+                  role="button"
+                  data-mdb-toggle="dropdown"
+                  aria-expanded="false"
+                >
+                  Estudiantes
+                </a>
+                <!-- Dropdown menu -->
+                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                  <li>
+                    <a class="dropdown-item" href="./estudiantes.html">Autogestion</a>
+                  </li>
+                  <li><hr class="dropdown-divider" /></li>
+                </ul>
+              </li>
+            
+            </ul>
+            <!-- Left links -->
+          </div>
+          <!-- Collapsible wrapper -->
+        </div>
+        <!-- Container wrapper -->
+      </nav>
+  </header>
+    <main>
+    <h1 class="texto_formulario">FORMULARIO DE INSCRIPCION A MATERIAS</h1>
+    <h2 class="texto_formulario">Aquí podrán anotarse los estudiantes interesados para rendir.</h2>
+    <h3 class="texto_formulario">Colocá tus datos, Curso, Division y el nombre de la materia que necesitas rendir</h3>
+    <div class="formulario">
+        <form id="formulario" >
+            <label for="">Nombre</label>
+            <input type="text" id="nombre" >
+            <label for="">Apellido</label>
+            <input type="text" id="apellido" >
+            <label for="">Curso</label>
+            <input type="number" id="curso">
+            <label for="">Division</label>
+            <input type="text" id="division">
+            <label for="">Materia</label>
+            <input type="text" id="materia">
+            <button type="submit" class="form-button" onclick="capturaDatos()">Enviar</button>
+        </form>
+    </div>
+    <div id="bienvenida" class="mensaje"></div>
+</main>
+<footer>
+
+</footer>
+    <script src="../Js/jsFormulario.js"></script>
+    <!-- MDB -->
+<script
+type="text/javascript"
+src="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/5.0.0/mdb.min.js"
+></script>
+</body>
+</html>
